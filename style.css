@@ -1,24 +1,23 @@
+/* resetando o espaçamento padrao da pagina */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* corpo da pagina */
 body{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* background-color: #307c70; */
     background-image: url(imagens/futurista1.jpg);
-    /* background-repeat: no-repeat;
-    background-size: cover; */
     background-position: center center;
     font-family: sans-serif;
     font-style: italic;
-    font-weight: lighter;
 }
 
+/* cabeçalho da pagina */
 header{
     border-radius: 20px;
     background-color: #f0f0f0;
@@ -39,6 +38,7 @@ h2{
     font-size: 30px;
 }
 
+/* titulo animado */
 .title-animation{
     display: inline-block;
     overflow: hidden;
@@ -61,6 +61,7 @@ h2{
     }
 }
 
+/* navegação da pagina */
 nav{
     width: 100%;
     font-size: 20px;
@@ -120,6 +121,7 @@ nav li .active:hover{
     background-color: #333;
 }
 
+/* conteudo da pagina seção */
 section#sobre{
     border-radius: 20px;
     display: flex;
@@ -137,10 +139,7 @@ section#sobre{
 .membros{
     width: 100%;
     max-width: 1800px;
-    /* padding: 1rem; */
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: center; */
     justify-content: space-around;
     align-content: space-around;
     flex-flow: row wrap;
@@ -151,7 +150,6 @@ section#sobre{
 
 .membro{
     padding: 0 15px;
-    /* border: 1px solid black; */
     margin: 20px;
     width: 650px;
     box-sizing: border-box;
@@ -174,6 +172,7 @@ section#sobre{
     box-shadow: 4px 4px 0px rgba(146, 142, 142, 0.795);
 }
 
+/* rodapé da pagina */
 footer{
     width: 90%;
     border-radius: 20px;
