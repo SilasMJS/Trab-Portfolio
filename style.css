@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #307c70; */
+    background-image: url(imagens/futurista1.jpg);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    background-position: center center;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+header{
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.title-animation{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(40, end), blink 0.2s step-end infinite;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 260px;
+    }
+}
+
+@keyframes blink{
+    50% {
+        border-color: transparent;
+    }
+}
+
+nav{
+    width: 100%;
+    font-size: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 0 0 20px 20px;
+}
+
+nav li{
+    float: left;
+}
+
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    background-color: #111;
+}
+
+nav li .active{
+    background-color: #04AA4D;
+}
+
+nav li .active:hover{
+    background-color: #04AA4D;
+}
+
+.opcoes{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.botao a:hover{
+    background-color: black;
+}
+
+.botao:hover .opcoes{
+    display: block;
+    background-color: #333;
+}
+
+section#sobre{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 7px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    font-size: 20px;
+}
+
+.membros{
+    width: 100%;
+    max-width: 1800px;
+    /* padding: 1rem; */
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: space-around;
+    align-content: space-around;
+    flex-flow: row wrap;
+    gap: 0.1rem;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.membro{
+    padding: 0 15px;
+    /* border: 1px solid black; */
+    margin: 20px;
+    width: 650px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-image: url(imagens/cad-fundo.avif);
+    background-position: center left;
+    background-size: cover;
+    background-color: rgba(226, 225, 225, 0.795);
+    box-shadow: 7px 7px 0px rgb(119, 118, 118);
+    line-height: 1.5;
+    word-spacing: 5px;
+}
+
+.membro img{
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 0px rgba(146, 142, 142, 0.795);
+}
+
+footer{
+    width: 90%;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.contatos{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-flow: row wrap;
+    gap: 0.1rem;
+}
+
+.contato{
+    width: 140px;
+}
+
+.rede {
+    display: flex;
+    justify-content: center;
+}
+
+.contato a{
+    width: 180px;
+    text-decoration: none;
+    color: white;
+    margin: 0.2px;
+}
+
+.contato a .rede:hover{
+    font-size: large;
+}
+
+.contato img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.contato h4{
+    font-size: 20px;
+}
+
+.direito-autoral{
+    margin-top: 10px;
+}
