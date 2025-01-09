@@ -166,6 +166,65 @@ section#sobre{
     word-spacing: 5px;
 }
 
+.perfil{
+    width: 100%;
+    display: flex;
+    justify-content: center left;
+    align-items: center;
+    margin-bottom: 5px;
+    /* border: 1px solid black; */
+
+}
+.card .perfil img{
+    border-radius: unset;
+    border-radius: 50%;
+    width: 120px;
+    margin-right: 10px;
+}
+
+.card .galeria{
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+}
+
+.card .galeria img{
+    border: 1px solid black;
+    border-radius:unset ;
+}
+
+.card .galeria img:hover{
+    cursor: pointer;
+}
+
+.galeria .exibir{
+    position: relative;
+    display: inline-block;
+}
+
+.galeria .conteudo{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+.galeria .conteudo img{
+    box-shadow: unset;
+
+}
+
+.exibir:active .conteudo{
+    display: block;
+}
+
+.desc{
+    text-align: center;
+}
+
 .membro img{
     width: 200px;
     border-radius: 20px;
